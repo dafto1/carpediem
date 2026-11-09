@@ -1,14 +1,23 @@
 import { createCliRenderer, TextAttributes } from "@opentui/core";
 import { createRoot } from "@opentui/react";
-
+import { Header } from "./components/header";
+import { BuildBar } from "./components/build-bar";
+import { InputBar } from "./components/input-bar";
 function App() {
   return (
-    <box alignItems="center" justifyContent="center" flexGrow={1}>
-      <box justifyContent="center" alignItems="flex-end">
-        <ascii-font font="tiny" text="OpenTUI" />
-        <text attributes={TextAttributes.DIM}>What will you build?</text>
+    <box
+      alignItems="center"  
+      justifyContent="center" 
+      backgroundColor="#000D12"
+      width="100%" 
+      height="100%" 
+      gap ={2}
+    >
+      <Header></Header> 
+      <box width="100%" maxWidth={79} paddingX={2}>
+        <InputBar onSubmit={()=>{}} />
       </box>
-    </box>
+   </box>
   );
 }
 

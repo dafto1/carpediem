@@ -6,7 +6,7 @@
       "name": "carpediem",
     },
     "packages/cli": {
-      "name": "cli",
+      "name": "@carpediem/cli",
       "dependencies": {
         "@opentui/core": "^0.8.1",
         "@opentui/react": "^0.8.1",
@@ -19,6 +19,8 @@
     },
   },
   "packages": {
+    "@carpediem/cli": ["@carpediem/cli@workspace:packages/cli"],
+
     "@opentui/core": ["@opentui/core@0.8.3", "", { "dependencies": { "bun-ffi-structs": "0.3.1", "diff": "9.0.0", "marked": "17.0.1", "string-width": "7.2.0" }, "optionalDependencies": { "@opentui/core-darwin-arm64": "0.8.3", "@opentui/core-darwin-x64": "0.8.3", "@opentui/core-linux-arm64": "0.8.3", "@opentui/core-linux-arm64-musl": "0.8.3", "@opentui/core-linux-x64": "0.8.3", "@opentui/core-linux-x64-musl": "0.8.3", "@opentui/core-win32-arm64": "0.8.3", "@opentui/core-win32-x64": "0.8.3" }, "peerDependencies": { "web-tree-sitter": "0.25.10" } }, "sha512-6Ng2jyiZZhGUTNbF8wXmjztihdGdx7uZq8O5bBgG/2XaCANw/BJgSxYb/nVFtorzShE9JcjszRhzh8XNxQ3yuA=="],
 
     "@opentui/core-darwin-arm64": ["@opentui/core-darwin-arm64@0.8.3", "", { "os": "darwin", "cpu": "arm64" }, "sha512-9YaOiVlld+J/POWW0TnUe9kX5+/9B0iEszdTAfgHFqSkVz4ndnYnFJTCC9fnwLrS+WOCked+7M9sS2DXiPpFQw=="],
@@ -48,8 +50,6 @@
     "bun-ffi-structs": ["bun-ffi-structs@0.3.1", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-3gM7PpVWLyrwxWjcilSiGuhWanhZivvo6l0u573NziPH6f/gwk6McbaYgn7oJWov6pKGRTDbrg94W5DcJsKTtQ=="],
 
     "bun-types": ["bun-types@1.4.4", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-yjrJh5oGX7mMPKGd19YXyIjmEuj4G4zNC30bs7PM9Az7NQ3ndF3j6hbeRdvJTRQEhJ/FYQwW0a2moweEi2hMxQ=="],
-
-    "cli": ["cli@workspace:packages/cli"],
 
     "diff": ["diff@9.0.0", "", {}, "sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw=="],
 

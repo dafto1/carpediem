@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "@carpediem/cli",
   "module": "src/index.tsx",
   "type": "module",
   "private": true,
