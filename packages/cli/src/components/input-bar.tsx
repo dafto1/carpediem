@@ -33,6 +33,14 @@ export function InputBar({ onSubmit, disabled = false }: Props) {
           backgroundColor="#1A1A24"   
           gap = {1}
         >
+          {true && (
+            <box
+              position="absolute" 
+              bottom="100%" left={0} 
+              
+            ></box>
+              
+          )}
           <textarea width = "100%" keyBindings={TEXTAREA_KEY_BINDINGS} focused={!disabled} placeholder={`Ask anything... What's on your mind today ? `} /> 
           <BuildBar></BuildBar>
         </box>
